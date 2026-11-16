@@ -1,0 +1,84 @@
+{
+  "description": "Saved deterministic paper runs; not rerun during public packaging.",
+  "seed": 2334,
+  "table2_datasets": [
+    "airborne_sr",
+    "spaceborne_sr",
+    "sar_to_optical",
+    "synthetic",
+    "misregistration"
+  ],
+  "methods": {
+    "msssim": {
+      "airborne_sr": 0.8,
+      "spaceborne_sr": 0.9533333333333334,
+      "sar_to_optical": 0.95,
+      "synthetic": 0.7533333333333333,
+      "timeseries": 0.98,
+      "misregistration": 0.6233333333333333,
+      "table2_average": 0.8160000000000001
+    },
+    "lpips": {
+      "airborne_sr": 0.3466666666666667,
+      "spaceborne_sr": 0.35,
+      "sar_to_optical": 0.6233333333333333,
+      "synthetic": 0.6766666666666666,
+      "timeseries": 0.97,
+      "misregistration": 0.9166666666666666,
+      "table2_average": 0.5826666666666667
+    },
+    "dreamsim": {
+      "airborne_sr": 0.6966666666666667,
+      "spaceborne_sr": 0.9,
+      "sar_to_optical": 0.51,
+      "synthetic": 0.8133333333333334,
+      "timeseries": 0.96,
+      "misregistration": 0.9733333333333334,
+      "table2_average": 0.7786666666666667
+    },
+    "diffsim": {
+      "airborne_sr": 0.33,
+      "spaceborne_sr": 0.25333333333333335,
+      "sar_to_optical": 0.6866666666666666,
+      "synthetic": 0.67,
+      "timeseries": 0.9466666666666667,
+      "misregistration": 0.88,
+      "table2_average": 0.5640000000000001
+    },
+    "remoteclip": {
+      "airborne_sr": 0.6233333333333333,
+      "spaceborne_sr": 0.41333333333333333,
+      "sar_to_optical": 0.24333333333333335,
+      "synthetic": 0.6633333333333333,
+      "timeseries": 0.9433333333333334,
+      "misregistration": 0.81,
+      "table2_average": 0.5506666666666666
+    },
+    "rspd": {
+      "airborne_sr": 0.8033333333333333,
+      "spaceborne_sr": 0.9533333333333334,
+      "sar_to_optical": 0.96,
+      "synthetic": 0.7933333333333333,
+      "timeseries": 0.97,
+      "misregistration": 0.94,
+      "table2_average": 0.89
+    },
+    "rspd_q95": {
+      "airborne_sr": 0.8066666666666666,
+      "spaceborne_sr": 0.9533333333333334,
+      "sar_to_optical": 0.9,
+      "synthetic": 0.7933333333333333,
+      "timeseries": 0.97,
+      "misregistration": 0.9433333333333334,
+      "table2_average": 0.8793333333333333
+    }
+  },
+  "human_unanimous_counts": {
+    "airborne_sr": 165,
+    "spaceborne_sr": 224,
+    "sar_to_optical": 254,
+    "synthetic": 240,
+    "timeseries": 278
+  },
+  "benchmark_manifest_sha256": "a1c8dec7d86713aae3be1e88b1ca57502a90916835c8879d6b9bf7155c1b64e2"
+}

@@ -1,0 +1,51 @@
+[build-system]
+requires = ["uv_build>=0.11.6,<0.12"]
+build-backend = "uv_build"
+
+[project]
+name = "rspd"
+version = "0.1.0"
+description = "Remote Sensing Perceptual Distance: a frozen pairwise RGB image metric."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+requires-python = ">=3.12"
+dependencies = [
+    "huggingface-hub>=0.30",
+    "numpy>=2.2",
+    "open-clip-torch==3.3.0",
+    "pillow>=11.0",
+    "torch>=2.6",
+    "torchvision>=0.21",
+]
+
+[project.optional-dependencies]
+baselines = ["dreamsim==0.2.1", "lpips==0.1.4", "peft>=0.12,<0.14", "scikit-image>=0.24"]
+diffsim = [
+    "accelerate>=1.0",
+    "diffusers==0.29.2",
+    "matplotlib>=3.9",
+    "peft>=0.12,<0.14",
+    "seaborn>=0.13",
+    "transformers==4.44.0",
+]
+
+[project.scripts]
+rspd = "rspd.cli:main"
+rspd-evaluate = "rspd.benchmark:main"
+
+[project.urls]
+Repository = "https://github.com/pubgeo/rspd"
+Issues = "https://github.com/pubgeo/rspd/issues"
+
+[dependency-groups]
+dev = ["pytest>=9.0", "ruff>=0.12"]
+
+[tool.uv.build-backend]
+module-name = "rspd"
+
+[tool.ruff]
+line-length = 120
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite the RSPD WACV paper when using this code or benchmark."
+title: "Rethinking Perceptual Similarity for Remote Sensing: Multi-Layer Attention Scoring and Human Preference Benchmarking"
+type: software
+authors:
+  - family-names: Underwood
+    given-names: Eli
+  - family-names: Bosch
+    given-names: Marc
+  - family-names: Joshi
+    given-names: Neil
+  - family-names: Wen
+    given-names: Jeffrey
+  - family-names: Brown
+    given-names: Myron
+repository-code: "https://github.com/pubgeo/rspd"
+license: MIT
+version: 0.1.0
